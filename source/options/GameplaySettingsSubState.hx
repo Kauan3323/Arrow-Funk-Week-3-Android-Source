@@ -48,7 +48,12 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			'bool',
 			false);
 		addOption(option);
-
+var option:Option = new Option('Controller Mode',
+			'Check this if you want to play with\na controller instead of using your Keyboard.',
+			'controllerMode',
+			'bool',
+			false);
+		addOption(option);
 		var option:Option = new Option('Ghost Tapping',
 			"If checked, you won't get misses from pressing keys\nwhile there are no notes able to be hit.",
 			'ghostTapping',
