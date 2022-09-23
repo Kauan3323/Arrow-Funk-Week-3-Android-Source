@@ -31,13 +31,17 @@ class FlashingState extends MusicBeatState
 		add(blackScreen);
 
 		warnText = new FlxText(0, 0, FlxG.width,
-			"Hey, watch out!\n
-			This Mod contains flashing lights and colorful colors\n
-			press ENTER to continue.",
+			"Hey, Leia Isso!\n
+			Esse mod contém luzes piscando e cores muito fortes!\n
+			Aperte A para continuar.",
 			32);
 		warnText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
 		warnText.screenCenter(Y);
 		add(warnText);
+		
+		#if android
+		addVirtualPad(NONE, A_B);
+		#end
 	}
 
 	override function update(elapsed:Float)
