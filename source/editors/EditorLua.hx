@@ -185,8 +185,9 @@ class EditorLua {
 			}
 		});
 
+		#if !android
 		Discord.DiscordClient.addLuaCallbacks(lua);
-
+                #end
 		call('onCreate', []);
 		#end
 	}
