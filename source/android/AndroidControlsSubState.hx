@@ -128,13 +128,7 @@ class AndroidControlsSubState extends FlxSubState
 
 	override function update(elapsed:Float)
 	{
-		#if android
-		if (FlxG.android.justReleased.BACK)
-		{
-			save();
-			MusicBeatState.switchState(new options.OptionsState());
-		}
-		#end
+		
 		if (FlxG.android.justReleased.BACK)
 		{
 			AndroidControls.setMode(curSelected);
