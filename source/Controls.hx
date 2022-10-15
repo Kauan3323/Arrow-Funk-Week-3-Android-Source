@@ -384,6 +384,11 @@ class Controls extends FlxActionSet
 	}
 	#end
 
+	override function update()
+	{
+		super.update();
+	}	
+		
 	#if android
 	public var trackedinputsUI:Array<FlxActionInput> = [];
 	public var trackedinputsNOTES:Array<FlxActionInput> = [];
@@ -515,10 +520,7 @@ class Controls extends FlxActionSet
 		}
 	}
 	#end			
-	override function update()
-	{
-		super.update();
-	}
+	
 
 	// inline
 	public function checkByName(name:Action):Bool
