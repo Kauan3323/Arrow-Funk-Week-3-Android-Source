@@ -16,7 +16,7 @@ class ClientPrefs {
 	public static var lowQuality:Bool = false;
 	public static var framerate:Int = 60;
 	public static var cursing:Bool = true;
-	public static var controllerMode:Bool = true;
+	public static var controllerMode:Bool = #if android true #else false #end;
 	public static var violence:Bool = true;
 	public static var camZooms:Bool = true;
 	public static var hideHud:Bool = false;
